@@ -1,16 +1,16 @@
-import { CenterComponent } from "../Design/CenterComponent";
-import styled from "styled-components";
-import Review from "./Review";
-import Forskuds from "./Forskuds";
-import SearchComponent from "./SearchComponent";
-import Placeholder from "./PlaceholderComponent";
+import { CenterComponent } from '../Design/CenterComponent'
+import styled from 'styled-components'
+import AnnualReport from './AnnualReport'
+import Forskuds from './Forskuds'
+import SearchComponent from './SearchComponent'
+import Placeholder from './PlaceholderComponent'
 
 const LandingComponent = () => {
   return (
     <>
       <SearchComponent />
       <Wrapper>
-        <Review />
+        <AnnualReport />
       </Wrapper>
       <Wrapper>
         <Forskuds />
@@ -28,10 +28,10 @@ const LandingComponent = () => {
         <Placeholder />
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default LandingComponent;
+export default LandingComponent
 
 const Wrapper = styled(CenterComponent)`
   @media screen and (min-width: 1024px) {
@@ -39,4 +39,4 @@ const Wrapper = styled(CenterComponent)`
     flex-direction: row;
     gap: 0 3rem;
   }
-`;
+`

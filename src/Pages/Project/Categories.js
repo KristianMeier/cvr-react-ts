@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ButtonNoLink from '../../Styles/ButtonNoLink'
 
 const Categories = ({ categories, filterItems }) => {
   return (
@@ -8,7 +9,6 @@ const Categories = ({ categories, filterItems }) => {
         return (
           <button
             type='button'
-            className='filter-btn'
             key={index}
             onClick={() => filterItems(category)}
           >
@@ -24,12 +24,27 @@ export default Categories
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 
-  .filter-btn {
+  button {
+    text-transform: uppercase;
+    text-decoration: none;
     background: transparent;
-    border-color: transparent;
-    padding: 0.375rem 0.75rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    margin-top: 0.75rem;
+    display: inline-block;
+    font-size: 0.875rem;
     cursor: pointer;
-    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  :hover {
+    color: grey;
+  }
+  hr {
+    height: 1rem;
   }
 `

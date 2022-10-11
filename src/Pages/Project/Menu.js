@@ -1,17 +1,14 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const Menu = ({ items }) => {
+const Menu = ({ data }) => {
   return (
     <Wrapper>
-      {items.map((menuItem) => {
-        const { id, title, desc } = menuItem
+      {data.map((item) => {
+        const { id, title, desc } = item
         return (
           <article key={id} className='menu-item'>
-            <div className='item-info'>
-              <h4>{title}</h4>
-              <p>{desc}</p>
-            </div>
+            <h6>{title}</h6>
+            <p>{desc}</p>
           </article>
         )
       })}
@@ -24,6 +21,7 @@ export default Menu
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 
   .item-info {
     margin: 1rem;

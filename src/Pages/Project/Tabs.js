@@ -1,45 +1,35 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Menu from './Menu'
 import Categories from './Categories'
-import items from './data'
 import styled from 'styled-components'
 import { ComponentContainer } from '../Design/ComponentContainer'
+import { data } from './data'
 
-const allCategories = ['All', ...new Set(items.map((item) => item.category))]
+const allCategories = ['Alle', ...new Set(data.map((item) => item.category))]
 
 function Tabs() {
-  const [menuItems, setMenuItems] = useState(items)
+  const [factBox, setFactBox] = useState(data)
   const [categories, setCategories] = useState(allCategories)
 
   const filterItems = (category) => {
-    if (category === 'all') {
-      setMenuItems(items)
+    if (category === 'Alle') {
+      setFactBox(data)
       return
     }
-    const newItems = items.filter((item) => item.category === category)
-    setMenuItems(newItems)
+    const newData = data.filter((item) => item.category === category)
+    setFactBox(newData)
   }
 
   return (
-    <ComponentContainer>
+    <Wrapper>
       <Categories categories={categories} filterItems={filterItems} />
-      <Menu items={menuItems} />
-    </ComponentContainer>
+      <Menu data={factBox} />
+    </Wrapper>
   )
 }
 
 export default Tabs
 
 const Wrapper = styled(ComponentContainer)`
-  .btn-container {
-    margin-bottom: 1rem;
-    display: flex;
-  }
-  .filter-btn {
-    background: transparent;
-    border-color: transparent;
-    font-size: 1rem;
-    padding: 0.375rem 0.75rem;
-    cursor: pointer;
-  }
+  min-height: 275px;
 `
