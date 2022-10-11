@@ -1,0 +1,54 @@
+.help-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin-bottom: 3rem;
+  gap: 0 3rem;
+  display: block;
+}
+.help-wrapper button {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+  transition: var(--transition);
+  color: darkblue;
+}
+.help-wrapper button:hover {
+  transform: scale(1.05);
+}
+.help-wrapper h1 {
+  margin-bottom: 1.25rem;
+}
+.help-wrapper h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.help-wrapper h5 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.help-wrapper .sidebar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .help-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .help-wrapper .sidebar {
+    display: block;
+    flex-basis: 30%;
+    padding: 1rem;
+    border: 2px solid black;
+  }
+}
+.help-wrapper .content {
+  flex-basis: 70%;
+  padding: 1rem;
+}
+.help-wrapper p {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}/*# sourceMappingURL=Help.css.map */

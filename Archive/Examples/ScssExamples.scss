@@ -1,0 +1,30 @@
+@import './Variables';
+
+.green-button {
+  @include button;
+  background-color: green;
+  color: white;
+
+  &:hover {
+    background-color: purple;
+    color: blue;
+  }
+}
+
+.red-button {
+  @include button;
+  background-color: red;
+  color: grey;
+}
+
+.green-button-arguments {
+  @include buttonWithArguments(green, white);
+  :hover {
+    background-color: purple;
+    color: blue;
+  }
+}
+
+.red-button-arguments {
+  @include buttonWithArguments(red, grey);
+}

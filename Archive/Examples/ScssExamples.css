@@ -1,0 +1,59 @@
+.green-button {
+  width: 200px;
+  height: 40px;
+  background-color: #800080;
+  border: black solid 1px;
+  color: black;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  border-color: transparent;
+  background-color: green;
+  color: white;
+}
+.green-button:hover {
+  background-color: purple;
+  color: blue;
+}
+
+.red-button {
+  width: 200px;
+  height: 40px;
+  background-color: #800080;
+  border: black solid 1px;
+  color: black;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  border-color: transparent;
+  background-color: red;
+  color: grey;
+}
+
+.green-button-arguments {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  border: black solid 1px;
+  color: white;
+  font-size: 15px;
+}
+.green-button-arguments :hover {
+  background-color: purple;
+  color: blue;
+}
+
+.red-button-arguments {
+  width: 200px;
+  height: 40px;
+  background-color: red;
+  border: black solid 1px;
+  color: grey;
+  font-size: 15px;
+}/*# sourceMappingURL=ScssExamples.css.map */

@@ -1,0 +1,23 @@
+@import './PageComponent';
+
+.search-wrapper {
+  @include pagecomponent;
+  justify-content: right;
+  align-items: center;
+  height: 220px;
+
+  h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-weight: 300;
+  }
+
+  p {
+    display: inline;
+  }
+
+  .filter {
+    margin-top: 1rem;
+    text-align: right;
+  }
+}

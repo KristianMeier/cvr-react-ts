@@ -1,0 +1,13 @@
+.landingpage-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+@media screen and (min-width: 1024px) {
+  .landingpage-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0 3rem;
+  }
+}/*# sourceMappingURL=LandingPage.css.map */

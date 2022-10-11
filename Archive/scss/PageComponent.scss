@@ -1,0 +1,11 @@
+@import './CenterComponent';
+
+@mixin pagecomponent {
+  @include centercomponent;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: var(--border-shadow);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: white;
+}

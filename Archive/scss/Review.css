@@ -1,0 +1,69 @@
+.placeholdercontainer-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: var(--border-shadow);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: white;
+  justify-content: right;
+  align-items: center;
+  min-height: 220px;
+  padding: 1rem;
+}
+.placeholdercontainer-wrapper h3 {
+  align-self: flex-start;
+  margin-top: 2.5rem;
+  font-weight: 300;
+}
+.placeholdercontainer-wrapper .filter {
+  margin-top: 1rem;
+  text-align: right;
+}
+.placeholdercontainer-wrapper .container-place {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review button {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+  transition: var(--transition);
+  color: darkblue;
+}
+.review button:hover {
+  transform: scale(1.05);
+}
+.review .author {
+  margin-bottom: 0.25rem;
+}
+.review .info {
+  margin-bottom: 0;
+}
+.review .previous-btn,
+.review .next-btn {
+  color: grey;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  justify-content: end;
+}
+.review .previous-btn:hover,
+.review .next-btn:hover {
+  color: black;
+}
+.review h4 {
+  letter-spacing: 0.1rem;
+  line-height: 1.25;
+  align-self: flex-start;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=Review.css.map */

@@ -1,0 +1,40 @@
+@import './CenterComponent';
+
+.header-wrapper {
+  @include centercomponent;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 1.5rem;
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 1.66rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.link-wrapper {
+  @include centercomponent;
+  align-self: flex-start;
+
+  p {
+    color: red;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 24rem;
+  }
+}

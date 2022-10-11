@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Hvad er en forskudsopgørelse?",
+    "info": "En forskudsopgørelse er en oversigt over de tal, som Skattestyrelsen anvender til at beregne din skat ud fra. Du kan sammenligne opgørelsen med et budget, da det er et skøn over, hvad Skattestyrelsen forventer, at du har af indkomst og fradrag i det kommende år. Det er vigtigt at du retter forskudsopgørelsen til, når der sker ændringer i din økonomi Forskudsopgørelsen gøres tilgængelig for privatpersoner i november måned og beregnes med udgangspunkt i dine oplysninger fra tidligere. Dine oplysninger kan være op til to år gamle."
+  },
+  {
+    "id": 2,
+    "title": "Hvor kan jeg se min forskudsopgørelse?",
+    "info": " Forskudsopgørelsen er digital og ligger tilgængelig på Skattestyrelsens hjemmeside. Du kan finde den ved at logge på TastSelv. Udover at du kan få et indblik i din forskudsopgørelse, kan du ligeledes tage et kig på din årsopgørelse. Den kigger, modsat forskudsopgørelsen, bagud og viser dine faktiske tal. Dermed kan du få et indblik i, hvad du reelt har tjent, og hvad dit fradrag og din skattesats har været det seneste år."
+  },
+  {
+    "id": 3,
+    "title": "Kan jeg ændre i min forskudsopgørelse?",
+    "info": "Ja, du kan sagtens ændre i din forskudsopgørelse løbende. Det er altid en god ide at tjekke, at tallene i din forskudsopgørelse passer. På den måde undgår du at betale for lidt i skat og dermed blive opkrævet en stor restskat, når året er omme. Det er særligt en god idé at ændre i forskudsopgørelsen, hvis der sker større ændringer i din indkomst, så den passer med din nuværende indkomst."
+  },
+  {
+    "id": 4,
+    "title": "Hvor retter jeg i forskudsopgørelsen?",
+    "info": "Du kan rette i din forskudsopgørelse på Skattestyrelsens hjemmeside ved at logge på TastSelv. Hvis du af visse årsager ikke har mulighed for at ændre i opgørelsen alene, kan du hente hjælp hos kommunens borgerservice eller på et bibliotek."
+  }
+]

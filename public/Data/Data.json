@@ -1,0 +1,160 @@
+{
+  "navbar": {
+    "textIcons": [
+      {
+        "id": 1,
+        "text": "Mit Virk",
+        "faIcon": "fa-solid fa-table-cells fa-1x",
+        "link": "/MitVirk"
+      },
+      {
+        "id": 2,
+        "text": "Digital Post",
+        "faIcon": "fa-solid fa-star fa-1x",
+        "link": "/DigitalMail"
+      },
+      {
+        "id": 3,
+        "text": "Følger",
+        "faIcon": "fa-regular fa-envelope fa-1x",
+        "link": "/Follows"
+      },
+      {
+        "id": 4,
+        "text": "Login",
+        "faIcon": "fa-solid fa-lock fa-1x",
+        "link": "/LogIn"
+      }
+    ]
+  },
+  "title": {
+    "mainTitle": "CVR - Det Centrale Virksomhedsregister",
+    "earthIcon": [{ "id": 5, "text": "", "faIcon": "fa-solid fa-globe fa-1x" }],
+    "textIcons": [
+      {
+        "id": 6,
+        "text": "Github Repo",
+        "faIcon": "",
+        "link": "/Danish"
+      }
+    ],
+    "titleLinks": [
+      {
+        "id": 9,
+        "text": "Søg i CVR",
+        "faIcon": "",
+        "link": "/"
+      },
+      {
+        "id": 10,
+        "text": "Hjælp til CVR",
+        "faIcon": "",
+        "link": "/Help"
+      },
+      {
+        "id": 11,
+        "text": "Kurv",
+        "faIcon": "",
+        "link": "/Kurv"
+      }
+    ]
+  },
+  "search": {
+    "title": "Search CVR",
+    "textIcons": [
+      {
+        "id": 12,
+        "text": "Søg i CVR",
+        "faIcon": "fa-solid fa-magnifying-glass fa-2x",
+        "link": "/Search"
+      }
+    ]
+  },
+  "footer": {
+    "firstColumn": [
+      {
+        "id": 14,
+        "text": "Emner",
+        "faIcon": "",
+        "link": "/Emner"
+      },
+      {
+        "id": 15,
+        "text": "Find Selvbetjening eller mere",
+        "faIcon": "",
+        "link": "/Selvbetjening"
+      },
+      {
+        "id": 16,
+        "text": "Myndigheder",
+        "faIcon": "",
+        "link": "/Myndigheder"
+      },
+      {
+        "id": 17,
+        "text": "Find selvbetjening sorteret efter myndigheder",
+        "faIcon": "",
+        "link": "/FindSelvbetjening"
+      }
+    ],
+    "secondColumn": [
+      {
+        "id": 18,
+        "text": "Kontakt CVR",
+        "faIcon": "",
+        "link": "/KontantCvr"
+      },
+      { "id": 19, "text": "Cookies", "faIcon": "", "link": "/Cookies" },
+      {
+        "id": 20,
+        "text": "Find selvbetjening sorteret efter myndigheder",
+        "faIcon": "",
+        "link": "/FindSelvbetjening"
+      },
+      {
+        "id": 21,
+        "text": "Persondata Politik",
+        "faIcon": "",
+        "link": "/PersonData"
+      },
+      {
+        "id": 22,
+        "text": "Tilgængelighedserklærring",
+        "faIcon": "",
+        "link": "/Tilgængelighedserklærring"
+      }
+    ],
+    "thirdColumn": [
+      {
+        "id": 23,
+        "text": "Virk",
+        "faIcon": "",
+        "link": "/Virk"
+      },
+      {
+        "id": 24,
+        "text": "Nye Regler",
+        "faIcon": "",
+        "link": "/NyeRegler"
+      },
+      {
+        "id": 25,
+        "text": "Privacykompasset",
+        "faIcon": "",
+        "link": "/Privacykompasset"
+      },
+      {
+        "id": 26,
+        "text": "Sikkerhedstjekket",
+        "faIcon": "",
+        "link": "/Sikkerhedstjekket"
+      },
+      {
+        "id": 27,
+        "text": "Virk Assistenten",
+        "faIcon": "",
+        "link": "/VirkAssistenten"
+      }
+    ]
+  }
+}

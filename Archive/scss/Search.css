@@ -1,0 +1,26 @@
+.search-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: var(--border-shadow);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: white;
+  justify-content: right;
+  align-items: center;
+  height: 220px;
+}
+.search-wrapper h1 {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-weight: 300;
+}
+.search-wrapper p {
+  display: inline;
+}
+.search-wrapper .filter {
+  margin-top: 1rem;
+  text-align: right;
+}/*# sourceMappingURL=Search.css.map */

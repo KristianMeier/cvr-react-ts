@@ -1,0 +1,58 @@
+// Main Theme colors
+$mainColorLight: rgb(8, 70, 255);
+$mainColor: rgba(87, 101, 255, 0.591);
+$mainColorDark: rgba(128, 147, 255, 0.525);
+$bootstrapBlue: #0d6efd;
+
+// Greycolrs
+$darkGrey: rgb(83, 83, 83);
+$lightGrey: rgb(222, 222, 222);
+
+// Button styling
+$buttonBackground: #800080;
+$buttonBackgroundLigt: #fa00fa;
+$buttonBorder: black solid 1px;
+$buttonTextColor: black;
+$buttonFontSizeSmall: 12px;
+$buttonFontSize: 15px;
+$buttonFontSizeBig: 18px;
+$buttonWidth: 200px;
+$buttonHeight: 40px;
+
+// Mixins
+
+@mixin button {
+  width: 200px;
+  height: 40px;
+  background-color: $buttonBackground;
+  border: $buttonBorder;
+  color: $buttonTextColor;
+  font-size: $buttonFontSize;
+  border-radius: 8px;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  border-color: transparent;
+}
+
+@mixin buttonWithArguments($backgroundColorArgument, $colorArgument) {
+  width: 200px;
+  height: 40px;
+  background-color: $backgroundColorArgument;
+  border: $buttonBorder;
+  color: $colorArgument;
+  font-size: $buttonFontSize;
+}
+
+@mixin readMoreButton {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+  transition: var(--transition);
+  color: black;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
