@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import { CenterComponent } from '../../Layout/Design/CenterComponent'
+import Underline from '../Styles/Underline'
 import { data } from './CvrHelpData'
 
 function CvrHelp() {
@@ -9,35 +10,33 @@ function CvrHelp() {
   const { smalltitle, paras, title } = data[value]
   return (
     <Wrapper>
-      <div className='jobs-center'>
-        <div className='btn-container'>
-          {data.map((item, index) => {
-            const { id, heading } = item
-            return (
-              <button
-                key={id}
-                onClick={() => setValue(index)}
-                className={`job-btn ${index === value && 'active-btn'}`}
-              >
-                {heading}
-              </button>
-            )
-          })}
-        </div>
-        <article className='job-info'>
-          <h3>
-            {title}
-            {title}
-            {title}
-            {title}
-            {title}
-          </h3>
-          <p className='job-date'>{smalltitle}</p>
-          {paras.map((item, index) => {
-            return <p key={index}>{item}</p>
-          })}
-        </article>
+      <div className='btn-container'>
+        {data.map((item, index) => {
+          const { id, heading } = item
+          return (
+            <button
+              key={id}
+              onClick={() => setValue(index)}
+              className={`job-btn ${index === value && 'active-btn'}`}
+            >
+              {heading}
+            </button>
+          )
+        })}
       </div>
+      <article className='job-info'>
+        <h3>{title}</h3>
+        <p className='job-date'>{smalltitle}</p>
+        {paras.map((item, index) => {
+          return <p key={index}>{item}</p>
+        })}
+      </article>
+      <Underline
+        width='100%'
+        height='0.05rem'
+        background='black'
+        hideWidth='768px'
+      />
     </Wrapper>
   )
 }
@@ -45,33 +44,32 @@ function CvrHelp() {
 export default CvrHelp
 
 const Wrapper = styled(CenterComponent)`
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
 
-  .jobs-center {
-    width: 80vw;
-    max-width: var(--max-width);
-    margin-top: 0.5rem;
-    border: 2px solid red;
-  }
-
-  @media screen and (min-width: 769px) {
-    .jobs-center {
-      width: 90vw;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      column-gap: 1.5rem;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
   }
 
   .btn-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 2rem;
     flex-wrap: wrap;
+    order: 1;
+    margin-top: 1rem;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
+    .btn-container {
+      flex: 0 0 200px;
+      order: 0;
+      margin-top: 0rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     .btn-container {
       flex-direction: column;
       justify-content: flex-start;
@@ -82,18 +80,20 @@ const Wrapper = styled(CenterComponent)`
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
-    font-size: 1.25rem;
-    letter-spacing: var(--spacing);
-    margin: 0 0.5rem;
     transition: var(--transition);
+    letter-spacing: var(--spacing);
     cursor: pointer;
-    padding: 0.25rem 0;
-    line-height: 1;
+    padding: 0.3rem;
+    font-size: 0.75rem;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     .job-btn {
       margin-bottom: 1rem;
+      font-size: 1.25rem;
+      margin: 0 0.5rem;
+      padding: 0.25rem 0;
+      line-height: 2;
     }
   }
 
@@ -103,7 +103,7 @@ const Wrapper = styled(CenterComponent)`
     box-shadow: 0 2px grey;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     .active-btn,
     .job-btn:hover {
       box-shadow: -2px 0 grey;
@@ -126,6 +126,5 @@ const Wrapper = styled(CenterComponent)`
   }
   p {
     margin-bottom: 1.25rem;
-    color: black;
   }
 `

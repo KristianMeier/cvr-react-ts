@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     --radius: 0.25rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --max-width: 1170px;
+    --max-width: 1024px;
   }
 
 * {

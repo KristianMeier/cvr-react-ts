@@ -5,11 +5,17 @@ type Props = {
   width: string
   height: string
   background: string
+  hideWidth?: string
 }
 
-const Underline = ({ width, height, background }: Props) => {
+const Underline = ({ width, height, background, hideWidth }: Props) => {
   return (
-    <Wrapper width={width} height={height} background={background}></Wrapper>
+    <Wrapper
+      width={width}
+      height={height}
+      background={background}
+      hideWidth={hideWidth}
+    ></Wrapper>
   )
 }
 
@@ -21,4 +27,8 @@ const Wrapper = styled.div<Props>`
   background: ${({ background }) => background};
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: ${({ hideWidth }) => hideWidth}) {
+    display: none;
+  }
 `
