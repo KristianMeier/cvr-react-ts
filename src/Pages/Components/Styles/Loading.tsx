@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ComponentContainer } from '../Pages/Design/ComponentContainer'
+import { ComponentContainer } from '../../Layout/Design/ComponentContainer'
 
 type LoadingProps = {
   loadingType?: string

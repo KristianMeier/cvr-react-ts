@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import styled from 'styled-components'
-import { GlobalStyles } from '../../Styles/GlobalStyles'
+import { GlobalStyles } from '../Components/Styles/GlobalStyles'
 import Footer from './Footer'
 import Navigation from './Navigation'
 import Header from './Header'

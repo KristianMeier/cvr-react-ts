@@ -1,4 +1,4 @@
-import { ComponentContainer } from '../Design/ComponentContainer'
+import { ComponentContainer } from '../Layout/Design/ComponentContainer'
 
 const PlaceholderComponent = () => {
   return <ComponentContainer>PlaceholderComponent</ComponentContainer>

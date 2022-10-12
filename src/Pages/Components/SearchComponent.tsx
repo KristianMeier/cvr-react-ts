@@ -1,19 +1,24 @@
-import { SearchInput } from '../../Styles/SearchInput'
+import { SearchInput } from './Styles/SearchInput'
 import styled from 'styled-components'
 
-import { ComponentContainer } from '../Design/ComponentContainer'
-import { DataType } from '../../Fixtures/Types'
+import { ComponentContainer } from '../Layout/Design/ComponentContainer'
+import { TextIconType } from './SharedTypes'
 import { useEffect, useState } from 'react'
 import { getData } from '../../Services/ApiService'
-import Loading, { LoadingSpinner } from '../../Styles/Loading'
+import { LoadingSpinner } from './Styles/Loading'
+
+type SearchType = {
+  title: string
+  textIcons: TextIconType[]
+}
 
 const SearchComponent = () => {
-  const [data, setData] = useState<DataType>()
+  const [data, setData] = useState<SearchType>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')
 
-    setData(response.data)
+    setData(response.data.search)
   }
 
   useEffect(() => {
@@ -28,7 +33,7 @@ const SearchComponent = () => {
 
   return (
     <Wrapper>
-      <h1>{data.search.title}</h1>
+      <h1>{data.title}</h1>
       <SearchInput />
     </Wrapper>
   )

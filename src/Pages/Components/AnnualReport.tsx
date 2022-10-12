@@ -1,10 +1,15 @@
 import { useEffect, useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import styled from 'styled-components'
-import { AnnualReportFacts } from '../../Fixtures/Types'
 import { getData } from '../../Services/ApiService'
-import { ComponentContainer } from '../Design/ComponentContainer'
+import { ComponentContainer } from '../Layout/Design/ComponentContainer'
 import ReadMoreButton from './ReadMoreButton'
+
+type AnnualReportFacts = {
+  id: number
+  title: string
+  text: string
+}
 
 const AnnualReport = () => {
   const [data, setData] = useState<AnnualReportFacts[]>([])

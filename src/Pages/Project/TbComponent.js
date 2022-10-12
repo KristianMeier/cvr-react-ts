@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Menu from './Menu'
-import Categories from './Categories'
+import TbContent from './TbContent'
+import TbCategories from './ArCategories'
 import styled from 'styled-components'
-import { ComponentContainer } from '../Design/ComponentContainer'
+import { ComponentContainer } from '../Layout/Design/ComponentContainer'
 import { data } from './data'
 
 const allCategories = ['Alle', ...new Set(data.map((item) => item.category))]
 
-function Tabs() {
+function TbComponent() {
   const [factBox, setFactBox] = useState(data)
   const [categories, setCategories] = useState(allCategories)
 
@@ -22,13 +22,13 @@ function Tabs() {
 
   return (
     <Wrapper>
-      <Categories categories={categories} filterItems={filterItems} />
-      <Menu data={factBox} />
+      <TbCategories categories={categories} filterItems={filterItems} />
+      <TbContent data={factBox} />
     </Wrapper>
   )
 }
 
-export default Tabs
+export default TbComponent
 
 const Wrapper = styled(ComponentContainer)`
   min-height: 275px;

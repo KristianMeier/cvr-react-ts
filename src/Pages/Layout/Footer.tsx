@@ -1,17 +1,23 @@
-import { StyledLink } from '../../Styles/StyledLink'
+import { StyledLink } from '../Components/Styles/StyledLink'
 import styled from 'styled-components'
-import Logo from '../../Styles/Logo'
+import Logo from '../Components/Styles/Logo'
 import { useState, useEffect } from 'react'
-import { DataType } from '../../Fixtures/Types'
+import { TextIconType } from '../Components/SharedTypes'
 import { getData } from '../../Services/ApiService'
 
+type FooterType = {
+  firstColumn: TextIconType[]
+  secondColumn: TextIconType[]
+  thirdColumn: TextIconType[]
+}
+
 const Footer = () => {
-  const [data, setData] = useState<DataType>()
+  const [data, setData] = useState<FooterType>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')
 
-    setData(response.data)
+    setData(response.data.footer)
   }
 
   useEffect(() => {
@@ -28,7 +34,7 @@ const Footer = () => {
         <Logo />
       </section>
       <section className='footer-section'>
-        {data.footer.firstColumn.map((item, index) => {
+        {data.firstColumn.map((item, index) => {
           return (
             <StyledLink
               odd={(index + 1) % 2 !== 0}
@@ -42,7 +48,7 @@ const Footer = () => {
         <hr />
       </section>
       <section className='footer-section'>
-        {data.footer.secondColumn.map((item, index) => {
+        {data.secondColumn.map((item, index) => {
           return (
             <StyledLink
               first={index === 0}
@@ -56,7 +62,7 @@ const Footer = () => {
         <hr />
       </section>
       <section className='footer-section'>
-        {data.footer.thirdColumn.map((item, index) => {
+        {data.thirdColumn.map((item, index) => {
           return (
             <StyledLink
               first={index === 0}

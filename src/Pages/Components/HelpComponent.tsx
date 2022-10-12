@@ -1,8 +1,8 @@
 // @ts-nocheck
 import { useState } from 'react'
-import SidebarLink from '../../Styles/SidebarLink'
+import SidebarLink from './Styles/SidebarLink'
 import styled from 'styled-components'
-import { CenterComponent } from '../Design/CenterComponent'
+import { CenterComponent } from '../Layout/Design/CenterComponent'
 import { JsonResponse } from '../Help'
 import ReadMoreButton from './ReadMoreButton'
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Menu = ({ data }) => {
+const TbContent = ({ data }) => {
   return (
     <Wrapper>
       {data.map((item) => {
@@ -16,7 +16,7 @@ const Menu = ({ data }) => {
   )
 }
 
-export default Menu
+export default TbContent
 
 const Wrapper = styled.div`
   display: flex;

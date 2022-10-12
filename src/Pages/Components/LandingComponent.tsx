@@ -1,4 +1,4 @@
-import { CenterComponent } from '../Design/CenterComponent'
+import { CenterComponent } from '../Layout/Design/CenterComponent'
 import styled from 'styled-components'
 import AnnualReport from './AnnualReport'
 import Forskuds from './Forskuds'

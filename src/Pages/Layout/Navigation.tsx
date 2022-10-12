@@ -1,18 +1,22 @@
-import { Icon } from '../../Styles/Icon'
-import { StyledLink } from '../../Styles/StyledLink'
+import { Icon } from '../Components/Styles/Icon'
+import { StyledLink } from '../Components/Styles/StyledLink'
 import styled from 'styled-components'
-import Logo from '../../Styles/Logo'
+import Logo from '../Components/Styles/Logo'
 import { useEffect, useState } from 'react'
-import { DataType } from '../../Fixtures/Types'
 import { getData } from '../../Services/ApiService'
+import { TextIconType } from '../Components/SharedTypes'
+
+type NavbarType = {
+  textIcons: TextIconType[]
+}
 
 const Navigation = () => {
-  const [data, setData] = useState<DataType>()
+  const [data, setData] = useState<NavbarType>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')
 
-    setData(response.data)
+    setData(response.data.navbar)
   }
 
   useEffect(() => {
@@ -28,10 +32,10 @@ const Navigation = () => {
       <picture>
         <Logo />
       </picture>
-      {data.navbar.textIcons.map((item) => (
+      {data.textIcons.map((item) => (
         <StyledLink key={item.id} {...item} />
       ))}
-      {data.navbar.textIcons.map((item) => (
+      {data.textIcons.map((item) => (
         <Icon key={item.id} {...item} />
       ))}
     </Wrapper>

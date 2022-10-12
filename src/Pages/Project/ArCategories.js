@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import ButtonNoLink from '../../Styles/ButtonNoLink'
+import ButtonNoLink from '../Components/Styles/ButtonNoLink'
 
-const Categories = ({ categories, filterItems }) => {
+const TbCategories = ({ categories, filterItems }) => {
   return (
     <Wrapper>
       {categories.map((category, index) => {
@@ -20,7 +20,7 @@ const Categories = ({ categories, filterItems }) => {
   )
 }
 
-export default Categories
+export default TbCategories
 
 const Wrapper = styled.div`
   display: flex;

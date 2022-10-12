@@ -1,17 +1,23 @@
-import { StyledLink } from '../../Styles/StyledLink'
-import { DataType } from '../../Fixtures/Types'
+import { StyledLink } from '../Components/Styles/StyledLink'
 import styled from 'styled-components'
-import { CenterComponent } from '../Design/CenterComponent'
+import { CenterComponent } from './Design/CenterComponent'
 import { useEffect, useState } from 'react'
 import { getData } from '../../Services/ApiService'
+import { TextIconType } from '../Components/SharedTypes'
+
+type HeaderType = {
+  mainTitle: string
+  textIcons: TextIconType[]
+  titleLinks: TextIconType[]
+}
 
 const Header = () => {
-  const [data, setData] = useState<DataType>()
+  const [data, setData] = useState<HeaderType>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')
 
-    setData(response.data)
+    setData(response.data.header)
   }
 
   useEffect(() => {
@@ -25,10 +31,10 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        <h1>{data.header.mainTitle} </h1>
+        <h1>{data.mainTitle} </h1>
       </Wrapper>
       <Links>
-        {data.header.titleLinks.map((item) => (
+        {data.titleLinks.map((item) => (
           <StyledLink linktype='top' size='1.2rem' key={item.id} {...item} />
         ))}
         <hr />

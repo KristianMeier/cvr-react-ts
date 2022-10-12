@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import Button from '../Styles/Button'
-import { LoadingSpinner } from '../Styles/Loading'
+import Button from './Components/Styles/Button'
+import { LoadingSpinner } from './Components/Styles/Loading'
 import HelpComponent from './Components/HelpComponent'
-import ButtonNoLink from '../Styles/ButtonNoLink'
+import ButtonNoLink from './Components/Styles/ButtonNoLink'
 import { getData } from '../Services/ApiService'
 
 export type JsonResponse = {
