@@ -133,25 +133,21 @@
       {
         "id": 14,
         "text": "Emner",
-        "faIcon": "",
         "link": "/Emner"
       },
       {
         "id": 15,
         "text": "Find Selvbetjening eller mere",
-        "faIcon": "",
         "link": "/Selvbetjening"
       },
       {
         "id": 16,
         "text": "Myndigheder",
-        "faIcon": "",
         "link": "/Myndigheder"
       },
       {
         "id": 17,
         "text": "Find selvbetjening sorteret efter myndigheder",
-        "faIcon": "",
         "link": "/FindSelvbetjening"
       }
     ],
@@ -159,26 +155,22 @@
       {
         "id": 18,
         "text": "Kontakt CVR",
-        "faIcon": "",
         "link": "/KontantCvr"
       },
-      { "id": 19, "text": "Cookies", "faIcon": "", "link": "/Cookies" },
+      { "id": 19, "text": "Cookies", "link": "/Cookies" },
       {
         "id": 20,
         "text": "Find selvbetjening sorteret efter myndigheder",
-        "faIcon": "",
         "link": "/FindSelvbetjening"
       },
       {
         "id": 21,
         "text": "Persondata Politik",
-        "faIcon": "",
         "link": "/PersonData"
       },
       {
         "id": 22,
         "text": "Tilgængelighedserklærring",
-        "faIcon": "",
         "link": "/Tilgængelighedserklærring"
       }
     ],
@@ -186,31 +178,26 @@
       {
         "id": 23,
         "text": "Virk",
-        "faIcon": "",
         "link": "/Virk"
       },
       {
         "id": 24,
         "text": "Nye Regler",
-        "faIcon": "",
         "link": "/NyeRegler"
       },
       {
         "id": 25,
         "text": "Privacykompasset",
-        "faIcon": "",
         "link": "/Privacykompasset"
       },
       {
         "id": 26,
         "text": "Sikkerhedstjekket",
-        "faIcon": "",
         "link": "/Sikkerhedstjekket"
       },
       {
         "id": 27,
         "text": "Virk Assistenten",
-        "faIcon": "",
         "link": "/VirkAssistenten"
       }
     ]
