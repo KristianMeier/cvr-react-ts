@@ -1,31 +1,31 @@
-import { useEffect, useState } from "react";
-import { AccorditionDataType } from "../../Fixtures/Types";
-import { getData } from "../../Services/ApiService";
-import { ComponentContainer } from "../Design/ComponentContainer";
-import { ForskudsTopic } from "./ForskudsTopic";
+import { useEffect, useState } from 'react'
+import { AccorditionDataType } from '../../Fixtures/Types'
+import { getData } from '../../Services/ApiService'
+import { ComponentContainer } from '../Design/ComponentContainer'
+import { ForskudsTopic } from './ForskudsTopic'
 
 function Forskuds() {
-  const [data, setData] = useState<AccorditionDataType[]>([]);
+  const [data, setData] = useState<AccorditionDataType[]>([])
 
   const getTheData = async () => {
-    const response = await getData("data/AccorditionData.json");
+    const response = await getData('data/Data.json')
 
-    setData(response.data);
-  };
+    setData(response.data.forskudsData)
+  }
 
   useEffect(() => {
-    getTheData();
-  }, []);
+    getTheData()
+  }, [])
 
   return (
     <ComponentContainer>
-      <section className="info">
+      <section className='info'>
         {data.map((topic) => {
-          return <ForskudsTopic key={topic.id} {...topic}></ForskudsTopic>;
+          return <ForskudsTopic key={topic.id} {...topic}></ForskudsTopic>
         })}
       </section>
     </ComponentContainer>
-  );
+  )
 }
 
-export default Forskuds;
+export default Forskuds

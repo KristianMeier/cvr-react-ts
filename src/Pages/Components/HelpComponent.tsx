@@ -1,12 +1,10 @@
 // @ts-nocheck
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import SidebarLink from '../../Styles/SidebarLink'
 import styled from 'styled-components'
 import { CenterComponent } from '../Design/CenterComponent'
 import { JsonResponse } from '../Help'
 import ReadMoreButton from './ReadMoreButton'
-import { JsData } from '../../Fixtures/Types'
-import { getData } from '../../Services/ApiService'
 
 type Props = {
   data: JsonResponse
@@ -16,22 +14,6 @@ type Props = {
 
 const HelpComponent = ({ data, removeSidebarLink, clearData }: Props) => {
   const [readMore, setReadMore] = useState(true)
-
-  const [fuck, setFuck] = useState<JsData>()
-
-  const getTheData = async () => {
-    const response = await getData('data/JsData.json')
-
-    setFuck(response.data)
-  }
-
-  useEffect(() => {
-    getTheData()
-  }, [])
-
-  if (fuck === undefined) {
-    return <div>Nope</div>
-  }
 
   return (
     <Wrapper>

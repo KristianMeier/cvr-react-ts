@@ -1,4 +1,65 @@
 {
+  "loremTwentyFive": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas ad libero, blanditiis vero eius hic. Sint, reprehenderit vero nemo et suscipit ex ipsum quia.",
+  "loremHundred": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, unde! Doloremque adipisci, magnam iste nisi maxime perspiciatis cum saepe unde molestias praesentium impedit tenetur? Dolorum libero inctio accusamus placeat laborum in sunt quaerat assumenda facere inventore eligendi magni sequi fuga, tempore facilis fugit nobis laudantium fugiat eum blanditiis voluptatibus, ipsam, amet consequatur aliquam? Dolor ut cumque, cupiditate modi eum magni accusantium minus molestiae incidunt repellendus dolores, nesciunt autem nulla quos voluptate aut qui? Molestiae odio facere ab, eos modi veritatis magnam temporibus itaque debitis dolores at excepturi natus exercitationem minima inventore assumenda dolorem officiis amet sint sed dolorum atque similique?  ",
+  "sitelinks": [
+    { "id": 23, "title": "Hjælp til CVR" },
+    { "id": 7, "title": "Log ind i CVR" },
+    { "id": 8, "title": "Virksomhedsrapport" },
+    { "id": 9, "title": "Signerede produkter" },
+    { "id": 10, "title": "Downloadede regnskaber" },
+    { "id": 11, "title": "Bestil dokumenter" },
+    { "id": 12, "title": "Legalisering" },
+    { "id": 13, "title": "Følg virksomhed" },
+    { "id": 14, "title": "Reklamebeskyttelse" },
+    { "id": 15, "title": "CVR på engelsk" },
+    { "id": 16, "title": "Sådan søger du" },
+    { "id": 17, "title": "Indgange til CVR" },
+    { "id": 18, "title": "Priser og levering" },
+    { "id": 19, "title": "Om CVR" },
+    { "id": 20, "title": "Tjenesteydere" },
+    { "id": 21, "title": "Regnskabsdata" },
+    { "id": 22, "title": "Virksomhedsregistre" },
+    { "id": 24, "title": "Adresseregistrering" }
+  ],
+  "arData": [
+    {
+      "id": 1,
+      "title": "Hvad er et årsregnskab?",
+      "text": "Når du starter en virksomhed, har du pligt til at føre regnskab over dine aktiviteter. Én gang om året laver du en redegørelse for økonomien i det forgangne år. Det kaldes et årsregnskab. Uanset størrelsen på din virksomhed skal du lave årsregnskabet. Regnskabet viser dels, hvordan du har brugt din virksomheds midler i det forløbne år, og dels fortæller det altså, hvordan det står til med virksomhedsøkonomien. Et årsregnskab tegner derfor et billede af, hvordan virksomheden har klaret sig ved at redegøre for indtægter og udgifter.  Du skal et årsregnskab af to årsager.For det første er det lovpligtigt for de fleste virksomhedstyper, og for det andet er det en god måde at få overblik over din virksomheds økonomi. Selvom du måske har en mindre virksomhed, er det altid en god ide at udarbejde et formelt regnskab, da du kan komme i en situation, hvor du skal fremlægge dit årsregnskab for et pengeinstitut, dine kreditorer eller andre interessenter, som forventer et regnskab, der er opsat efter almindelige regnskabsmæssige principper.   "
+    },
+    {
+      "id": 2,
+      "title": "Hvad skal dit årsregnskab indeholde?",
+      "text": "Indholdet i dit årsregnskab afhænger altså af din virksomheds størrelse og regnskabsklasse. Som minimum skal dit årsregnskab indeholde en balance, en resultatopgørelse og andre noter som ledelsespåtegning og regnskabspraksis. Det gælder typisk for virksomheder i regnskabsklasse A. Balancen angiver din virksomheds aktiver og passiver, mens resultatopgørelsen viser, om der er overskud eller underskud i virksomheden ved at angive forholdet mellem indtægter og udgifter. Ledelsespåtegningen dækker over ledelsens redegørelse for det senestes års aktiviteter og forventninger til det næste år. Regnskabspraksis består af de regler, virksomheden har benyttet sig af i udregningen af årsregnskabet. På den måde kan du som virksomhed skabe pålidelighed omkring regnskabet. Er din virksomhed i regnskabsklasse D, skal du typisk supplere årsregnskabet med en ledelsesberetning, en revisorpåtegning, en pengestrømsopgørelse og de finansielle nøgletal.    "
+    },
+    {
+      "id": 3,
+      "title": " Hvordan laver du årsregnskabet?",
+      "text": "Når du skal udarbejde dit årsregnskab for det forløbne regnskabsår, skal du have adgang til alle bilag fra året, der er gået, kasserapporterne, bankudskrifter og årsopgørelser fra banker. Men årsregnskabet afhænger altså af din regnskabsklasse. Du kan sagtens lave det selv. Her er det en god idé at anskaffe et regnskabsprogram til at hjælpe dig. Vil du hellere slippe for regnskabsdelen og spare tid, kan du få hjælp fra en revisor eller bogholder til at lave dit årsregnskab – fx Dineros to revisorpartnere, som sidder klar og tilbyder hjælp til dit årsregnskab. Så er du sikker på, at alle krav til dit årsregnskab er opfyldt, ligesom du får tid til at styre de øvrige dele af din virksomhed. Du kan også finde en lokal revisor i vores oversigt. Det er dit regnskabsår, der afgør, hvornår du skal indberette dit årsregnskab. Anpartsselskaber og aktieselskaber skal aflevere en årsrapport ved udgangen af regnskabsåret. Den skal godkendes på en generalforsamlingen, og indberettes til Erhvervsstyrelsen. Fristen for at indberette årsrapporten er senest seks måneder efter regnskabsårets afslutning. Det vil altså sige, at hvis dit regnskabsår afsluttes d. 31. december, skal årsrapporten indberettes senest d. 30. juni.     "
+    }
+  ],
+  "forskudsData": [
+    {
+      "id": 5,
+      "title": "Hvad er en forskudsopgørelse?",
+      "info": "En forskudsopgørelse er en oversigt over de tal, som Skattestyrelsen anvender til at beregne din skat ud fra. Du kan sammenligne opgørelsen med et budget, da det er et skøn over, hvad Skattestyrelsen forventer, at du har af indkomst og fradrag i det kommende år. Det er vigtigt at du retter forskudsopgørelsen til, når der sker ændringer i din økonomi Forskudsopgørelsen gøres tilgængelig for privatpersoner i november måned og beregnes med udgangspunkt i dine oplysninger fra tidligere. Dine oplysninger kan være op til to år gamle."
+    },
+    {
+      "id": 6,
+      "title": "Hvor kan jeg se min forskudsopgørelse?",
+      "info": " Forskudsopgørelsen er digital og ligger tilgængelig på Skattestyrelsens hjemmeside. Du kan finde den ved at logge på TastSelv. Udover at du kan få et indblik i din forskudsopgørelse, kan du ligeledes tage et kig på din årsopgørelse. Den kigger, modsat forskudsopgørelsen, bagud og viser dine faktiske tal. Dermed kan du få et indblik i, hvad du reelt har tjent, og hvad dit fradrag og din skattesats har været det seneste år."
+    },
+    {
+      "id": 7,
+      "title": "Kan jeg ændre i min forskudsopgørelse?",
+      "info": "Ja, du kan sagtens ændre i din forskudsopgørelse løbende. Det er altid en god ide at tjekke, at tallene i din forskudsopgørelse passer. På den måde undgår du at betale for lidt i skat og dermed blive opkrævet en stor restskat, når året er omme. Det er særligt en god idé at ændre i forskudsopgørelsen, hvis der sker større ændringer i din indkomst, så den passer med din nuværende indkomst."
+    },
+    {
+      "id": 8,
+      "title": "Hvor retter jeg i forskudsopgørelsen?",
+      "info": "Du kan rette i din forskudsopgørelse på Skattestyrelsens hjemmeside ved at logge på TastSelv. Hvis du af visse årsager ikke har mulighed for at ændre i opgørelsen alene, kan du hente hjælp hos kommunens borgerservice eller på et bibliotek."
+    }
+  ],
   "navbar": {
     "textIcons": [
       {
@@ -27,14 +88,13 @@
       }
     ]
   },
-  "title": {
+  "header": {
     "mainTitle": "CVR - Det Centrale Virksomhedsregister",
     "earthIcon": [{ "id": 5, "text": "", "faIcon": "fa-solid fa-globe fa-1x" }],
     "textIcons": [
       {
         "id": 6,
         "text": "Github Repo",
-        "faIcon": "",
         "link": "/Danish"
       }
     ],
@@ -42,19 +102,16 @@
       {
         "id": 9,
         "text": "Søg i CVR",
-        "faIcon": "",
         "link": "/"
       },
       {
         "id": 10,
         "text": "Hjælp til CVR",
-        "faIcon": "",
         "link": "/Help"
       },
       {
         "id": 11,
         "text": "Kurv",
-        "faIcon": "",
         "link": "/Kurv"
       }
     ]
@@ -70,6 +127,7 @@
       }
     ]
   },
+
   "footer": {
     "firstColumn": [
       {

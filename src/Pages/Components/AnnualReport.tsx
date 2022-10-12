@@ -10,9 +10,9 @@ const AnnualReport = () => {
   const [data, setData] = useState<AnnualReportFacts[]>([])
 
   const getTheData = async () => {
-    const response = await getData('data/AnnualReportFacts.json')
+    const response = await getData('data/Data.json')
 
-    setData(response.data)
+    setData(response.data.arData)
   }
 
   useEffect(() => {

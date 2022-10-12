@@ -11,13 +11,13 @@ export type JsonResponse = {
 }[]
 
 function Help() {
-  const url = 'Data/JsonData.json'
-
   const [error, setError] = useState<any>('')
   const [data, setData] = useState<JsonResponse | null>(null)
 
   const getTheData = async () => {
-    const response: { data: JsonResponse; error?: any } = await getData(url)
+    const response: { data: JsonResponse; error?: any } = await getData(
+      'Data/JsonData.json'
+    )
 
     setError(response.error)
     setData(response.data)

@@ -1,26 +1,26 @@
-import { Icon } from "../../Styles/Icon";
-import { StyledLink } from "../../Styles/StyledLink";
-import styled from "styled-components";
-import Logo from "../../Styles/Logo";
-import { useEffect, useState } from "react";
-import { DataType } from "../../Fixtures/Types";
-import { getData } from "../../Services/ApiService";
+import { Icon } from '../../Styles/Icon'
+import { StyledLink } from '../../Styles/StyledLink'
+import styled from 'styled-components'
+import Logo from '../../Styles/Logo'
+import { useEffect, useState } from 'react'
+import { DataType } from '../../Fixtures/Types'
+import { getData } from '../../Services/ApiService'
 
 const Navigation = () => {
-  const [data, setData] = useState<DataType>();
+  const [data, setData] = useState<DataType>()
 
   const getTheData = async () => {
-    const response = await getData("data/Data.json");
+    const response = await getData('data/Data.json')
 
-    setData(response.data);
-  };
+    setData(response.data)
+  }
 
   useEffect(() => {
-    getTheData();
-  }, []);
+    getTheData()
+  }, [])
 
   if (data === undefined) {
-    return <div>NOPE!</div>;
+    return <div>NOPE!</div>
   }
 
   return (
@@ -35,10 +35,10 @@ const Navigation = () => {
         <Icon key={item.id} {...item} />
       ))}
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
 
 const Wrapper = styled.nav`
   position: fixed;
@@ -85,4 +85,4 @@ const Wrapper = styled.nav`
       display: none;
     }
   }
-`;
+`
