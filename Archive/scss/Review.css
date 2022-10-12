@@ -34,7 +34,7 @@
   border: none;
   font-weight: 900;
   transition: var(--transition);
-  color: darkblue;
+  color: black;
 }
 .review button:hover {
   transform: scale(1.05);

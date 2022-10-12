@@ -4,7 +4,7 @@ import Catch from './Pages/Unfinshed'
 import Help from './Pages/Help'
 import Landing from './Pages/Landing'
 import Layout from './Pages/Layout/Layout'
-import TrialbalComponent from './Pages/Components/Triabalance/TrialbalComponent'
+import CvrHelp from './Pages/Components/CvrHelp/CvrHelp'
 
 const App = () => (
   <BrowserRouter>
@@ -12,7 +12,7 @@ const App = () => (
       <Route path='/' element={<Layout />}>
         <Route index element={<Landing />} />
         <Route path='help' element={<Help />} />
-        <Route path='tabs' element={<TrialbalComponent />} />
+        <Route path='cvrhelp' element={<CvrHelp />} />
         <Route path=':routeParams' element={<Catch />} />
       </Route>
     </Routes>

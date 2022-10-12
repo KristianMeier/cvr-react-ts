@@ -17,7 +17,7 @@ const TrialbalContent = ({ data }: Props) => {
         const { id, title, desc } = item
         return (
           <article key={id}>
-            <h5>{title}</h5>
+            <h6>{title}</h6>
             <p>{desc}</p>
           </article>
         )
@@ -33,6 +33,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: 2rem;
 
   @media screen and (min-width: 1000px) {
     article {

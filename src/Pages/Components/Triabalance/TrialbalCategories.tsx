@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Underline from '../Styles/Underline'
 
 type Props = {
   categories: string[]
@@ -7,19 +8,22 @@ type Props = {
 
 const TrialbalCategories = ({ categories, filterItems }: Props) => {
   return (
-    <Wrapper>
-      {categories.map((category, index) => {
-        return (
-          <button
-            type='button'
-            key={index}
-            onClick={() => filterItems(category)}
-          >
-            {category}
-          </button>
-        )
-      })}
-    </Wrapper>
+    <>
+      <Wrapper>
+        {categories.map((category, index) => {
+          return (
+            <button
+              type='button'
+              key={index}
+              onClick={() => filterItems(category)}
+            >
+              {category}
+            </button>
+          )
+        })}
+      </Wrapper>
+      <Underline width='21rem' height='0.3rem' background='grey' />
+    </>
   )
 }
 
@@ -31,20 +35,18 @@ const Wrapper = styled.div`
   gap: 0.75rem;
 
   button {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
+    border: transparent;
     background: transparent;
-    color: black;
     padding: 0.5rem 1rem;
-    margin-top: 0.75rem;
-    display: inline-block;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     cursor: pointer;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  :hover {
+  button:hover {
     color: grey;
   }
 `

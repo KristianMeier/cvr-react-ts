@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 import { data } from './TrialbalData'
 import { ComponentContainer } from '../../Layout/Design/ComponentContainer'
+import Underline from '../Styles/Underline'
 
 export type Props = {
   id: number
@@ -32,6 +33,7 @@ function TrialbalComponent() {
   return (
     <Wrapper>
       <TrialbalCategories categories={categories} filterItems={filterItems} />
+      <Underline />
       <TrialbalContent data={Data} />
     </Wrapper>
   )
