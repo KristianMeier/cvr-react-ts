@@ -4,7 +4,7 @@ import Catch from './Pages/Unfinshed'
 import Help from './Pages/Help'
 import Landing from './Pages/Landing'
 import Layout from './Pages/Layout/Layout'
-import TrialbalComponent from './Pages/Components/Styles/Triabalance/TrialbalComponent'
+import TrialbalComponent from './Pages/Components/Triabalance/TrialbalComponent'
 
 const App = () => (
   <BrowserRouter>

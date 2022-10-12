@@ -4,7 +4,7 @@ import AnnualReport from './AnnualReport'
 import Forskuds from './Forskuds'
 import SearchComponent from './SearchComponent'
 import Placeholder from './PlaceholderComponent'
-import TrialbalComponent from './Styles/Triabalance/TrialbalComponent'
+import TrialbalComponent from './Triabalance/TrialbalComponent'
 
 const LandingComponent = () => {
   return (

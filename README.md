@@ -39,4 +39,4 @@
 
 - Fix @ts-nocheck
 - TbComponent kan jeg ikke finde ud af, at få json ind istedet for TbData.js
--
+- Kan der laves noget id-generering, så jeg ikke skal manauelt tilføje id hver gang?

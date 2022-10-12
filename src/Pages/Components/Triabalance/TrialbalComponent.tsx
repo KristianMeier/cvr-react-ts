@@ -5,7 +5,7 @@ import TrialbalCategories from './TrialbalCategories'
 import styled from 'styled-components'
 
 import { data } from './TrialbalData'
-import { ComponentContainer } from '../../../Layout/Design/ComponentContainer'
+import { ComponentContainer } from '../../Layout/Design/ComponentContainer'
 
 export type Props = {
   id: number
