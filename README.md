@@ -27,4 +27,15 @@
 
 # Feedback 09-10-2022
 
+- Intet codereview. Kun spørgsmål.
+
+# Feedback 16-10-2022
+
+- Feedback fra feedback (lol)
+  - Bliv bedre til typescript, så der ikke spildes tid på det.
+  - Der er nok 60-90 minutter til Codereview. Fjern uvitige emner.
+
 # Spørgsmål/beslutninger
+
+- Fix @ts-nocheck
+-

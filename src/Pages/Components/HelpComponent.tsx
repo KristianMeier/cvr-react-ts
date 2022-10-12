@@ -1,42 +1,43 @@
-import { useEffect, useState } from "react";
-import SidebarLink from "../../Styles/SidebarLink";
-import styled from "styled-components";
-import { CenterComponent } from "../Design/CenterComponent";
-import { JsonResponse } from "../Help";
-import ReadMoreButton from "./ReadMoreButton";
-import { JsData } from "../../Fixtures/Types";
-import { getData } from "../../Services/ApiService";
+// @ts-nocheck
+import { useEffect, useState } from 'react'
+import SidebarLink from '../../Styles/SidebarLink'
+import styled from 'styled-components'
+import { CenterComponent } from '../Design/CenterComponent'
+import { JsonResponse } from '../Help'
+import ReadMoreButton from './ReadMoreButton'
+import { JsData } from '../../Fixtures/Types'
+import { getData } from '../../Services/ApiService'
 
 type Props = {
-  data: JsonResponse;
-  removeSidebarLink: (id: number) => void;
-  clearData: () => void;
-};
+  data: JsonResponse
+  removeSidebarLink: (id: number) => void
+  clearData: () => void
+}
 
 const HelpComponent = ({ data, removeSidebarLink, clearData }: Props) => {
-  const [readMore, setReadMore] = useState(true);
+  const [readMore, setReadMore] = useState(true)
 
-  const [fuck, setFuck] = useState<JsData>();
+  const [fuck, setFuck] = useState<JsData>()
 
   const getTheData = async () => {
-    const response = await getData("data/JsData.json");
+    const response = await getData('data/JsData.json')
 
-    setFuck(response.data);
-  };
+    setFuck(response.data)
+  }
 
   useEffect(() => {
-    getTheData();
-  }, []);
+    getTheData()
+  }, [])
 
   if (fuck === undefined) {
-    return <div>Nope</div>;
+    return <div>Nope</div>
   }
 
   return (
     <Wrapper>
-      <div className="sidebar">
-        {data.map((item) => {
-          const { id, title } = item;
+      <div className='sidebar'>
+        {data.sitelinks.map((item) => {
+          const { id, title } = item
           return (
             <SidebarLink
               key={id}
@@ -44,17 +45,17 @@ const HelpComponent = ({ data, removeSidebarLink, clearData }: Props) => {
               title={title}
               removeSidebarLink={removeSidebarLink}
             />
-          );
+          )
         })}
         <button onClick={clearData}> Clear Data</button>
       </div>
-      <div className="content">
+      <div className='content'>
         <h1>Dette er en titel</h1>
-        <h3>{fuck.loremTwentyFive.text}</h3>
+        <h3>{data.loremTwentyFive}</h3>
         <h5>
           {readMore
-            ? fuck.loremHundred.text
-            : `${fuck.loremHundred.text.substring(0, 200)}...  `}
+            ? data.loremHundred
+            : `${data.loremHundred.substring(0, 200)}...  `}
           <ReadMoreButton
             onClick={() => setReadMore(!readMore)}
             readMore={readMore}
@@ -62,10 +63,10 @@ const HelpComponent = ({ data, removeSidebarLink, clearData }: Props) => {
         </h5>
       </div>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default HelpComponent;
+export default HelpComponent
 
 const Wrapper = styled(CenterComponent)`
   min-height: 100vh;
@@ -124,4 +125,4 @@ const Wrapper = styled(CenterComponent)`
     font-size: 1.5rem;
     line-height: 2.25rem;
   }
-`;
+`
