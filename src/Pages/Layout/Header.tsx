@@ -5,14 +5,14 @@ import { useEffect, useState } from 'react'
 import { getData } from '../../Services/ApiService'
 import { TextIconType } from '../Components/SharedTypes'
 
-type HeaderType = {
+type Props = {
   mainTitle: string
   textIcons: TextIconType[]
   titleLinks: TextIconType[]
 }
 
 const Header = () => {
-  const [data, setData] = useState<HeaderType>()
+  const [data, setData] = useState<Props>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')

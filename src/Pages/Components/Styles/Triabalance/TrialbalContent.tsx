@@ -1,13 +1,23 @@
+//@ts-nocheck
 import styled from 'styled-components'
 
-const TbContent = ({ data }) => {
+type Props = {
+  id: number
+  title: string
+  category: string
+  desc: string
+}
+
+const TrialbalContent = ({ data }: Props) => {
+  console.log(data)
+
   return (
     <Wrapper>
       {data.map((item) => {
         const { id, title, desc } = item
         return (
-          <article key={id} className='menu-item'>
-            <h6>{title}</h6>
+          <article key={id}>
+            <h5>{title}</h5>
             <p>{desc}</p>
           </article>
         )
@@ -16,25 +26,17 @@ const TbContent = ({ data }) => {
   )
 }
 
-export default TbContent
+export default TrialbalContent
 
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 
-  .item-info {
-    margin: 1rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    .menu-item {
-      flex: 0 0 calc(50% - 1rem);
-    }
-  }
   @media screen and (min-width: 1000px) {
-    .menu-item {
-      flex: 0 0 calc(33.33% - 1rem);
+    article {
+      flex: 0 0 calc(33.33% - 1.5rem);
     }
   }
 `

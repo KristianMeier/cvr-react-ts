@@ -6,12 +6,12 @@ import { useEffect, useState } from 'react'
 import { getData } from '../../Services/ApiService'
 import { TextIconType } from '../Components/SharedTypes'
 
-type NavbarType = {
+type Props = {
   textIcons: TextIconType[]
 }
 
 const Navigation = () => {
-  const [data, setData] = useState<NavbarType>()
+  const [data, setData] = useState<Props>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')

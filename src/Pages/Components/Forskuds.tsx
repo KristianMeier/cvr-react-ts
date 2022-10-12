@@ -3,14 +3,14 @@ import { getData } from '../../Services/ApiService'
 import { ComponentContainer } from '../Layout/Design/ComponentContainer'
 import { ForskudsTopic } from './ForskudsTopic'
 
-export type ForskudsDataType = {
+export type Props = {
   id: number
   title: string
   info: string
 }
 
 function Forskuds() {
-  const [data, setData] = useState<ForskudsDataType[]>([])
+  const [data, setData] = useState<Props[]>([])
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')

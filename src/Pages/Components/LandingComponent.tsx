@@ -4,6 +4,7 @@ import AnnualReport from './AnnualReport'
 import Forskuds from './Forskuds'
 import SearchComponent from './SearchComponent'
 import Placeholder from './PlaceholderComponent'
+import TrialbalComponent from './Styles/Triabalance/TrialbalComponent'
 
 const LandingComponent = () => {
   return (
@@ -14,6 +15,9 @@ const LandingComponent = () => {
       </Wrapper>
       <Wrapper>
         <Forskuds />
+      </Wrapper>
+      <Wrapper>
+        <TrialbalComponent />
       </Wrapper>
       <Wrapper>
         <Placeholder />

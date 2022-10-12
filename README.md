@@ -38,4 +38,5 @@
 # Spørgsmål/beslutninger
 
 - Fix @ts-nocheck
+- TbComponent kan jeg ikke finde ud af, at få json ind istedet for TbData.js
 -

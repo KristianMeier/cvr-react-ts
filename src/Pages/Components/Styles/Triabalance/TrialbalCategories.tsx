@@ -1,8 +1,11 @@
-import React from 'react'
 import styled from 'styled-components'
-import ButtonNoLink from '../Components/Styles/ButtonNoLink'
 
-const TbCategories = ({ categories, filterItems }) => {
+type Props = {
+  categories: string[]
+  filterItems: (categories: string) => void
+}
+
+const TrialbalCategories = ({ categories, filterItems }: Props) => {
   return (
     <Wrapper>
       {categories.map((category, index) => {
@@ -20,7 +23,7 @@ const TbCategories = ({ categories, filterItems }) => {
   )
 }
 
-export default TbCategories
+export default TrialbalCategories
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,8 +46,5 @@ const Wrapper = styled.div`
 
   :hover {
     color: grey;
-  }
-  hr {
-    height: 1rem;
   }
 `

@@ -2,12 +2,12 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 
-type ForskudsTopicType = {
+type Props = {
   title: string
   info: string
 }
 
-export const ForskudsTopic = ({ title, info }: ForskudsTopicType) => {
+export const ForskudsTopic = ({ title, info }: Props) => {
   const [showInfo, setShowInfo] = useState(false)
   return (
     <TopicContainer>

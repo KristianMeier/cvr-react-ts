@@ -5,14 +5,14 @@ import { useState, useEffect } from 'react'
 import { TextIconType } from '../Components/SharedTypes'
 import { getData } from '../../Services/ApiService'
 
-type FooterType = {
+type Props = {
   firstColumn: TextIconType[]
   secondColumn: TextIconType[]
   thirdColumn: TextIconType[]
 }
 
 const Footer = () => {
-  const [data, setData] = useState<FooterType>()
+  const [data, setData] = useState<Props>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')

@@ -7,13 +7,13 @@ import { useEffect, useState } from 'react'
 import { getData } from '../../Services/ApiService'
 import { LoadingSpinner } from './Styles/Loading'
 
-type SearchType = {
+type Props = {
   title: string
   textIcons: TextIconType[]
 }
 
 const SearchComponent = () => {
-  const [data, setData] = useState<SearchType>()
+  const [data, setData] = useState<Props>()
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')

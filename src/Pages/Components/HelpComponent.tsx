@@ -4,7 +4,7 @@ import SidebarLink from './Styles/SidebarLink'
 import styled from 'styled-components'
 import { CenterComponent } from '../Layout/Design/CenterComponent'
 import { JsonResponse } from '../Help'
-import ReadMoreButton from './ReadMoreButton'
+import ReadMoreButton from './Styles/ReadMoreButton'
 
 type Props = {
   data: JsonResponse

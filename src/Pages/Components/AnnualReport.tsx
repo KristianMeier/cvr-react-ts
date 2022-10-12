@@ -3,16 +3,16 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import styled from 'styled-components'
 import { getData } from '../../Services/ApiService'
 import { ComponentContainer } from '../Layout/Design/ComponentContainer'
-import ReadMoreButton from './ReadMoreButton'
+import ReadMoreButton from './Styles/ReadMoreButton'
 
-type AnnualReportFacts = {
+type Props = {
   id: number
   title: string
   text: string
 }
 
 const AnnualReport = () => {
-  const [data, setData] = useState<AnnualReportFacts[]>([])
+  const [data, setData] = useState<Props[]>([])
 
   const getTheData = async () => {
     const response = await getData('data/Data.json')
